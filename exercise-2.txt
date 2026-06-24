@@ -1,0 +1,32 @@
+1. Giải thích các câu lệnh: git commit --amend: modify the latest commit
+ git commit --amend -m”<message>”: Change the latest commit message
+ git restore --staged <file>: Remove a file from staging area
+  git reset HEAD~1 : Remove the lastest commit while keeping its changes
+2. Hãy tưởng tượng có 1 folder lesson-3 mới được tạo. Hãy liệt kê các file theo từng
+vùng, liệt kê các commit và message tương ứng sau khi thao tác một loạt các lệnh sau
+(sẽ rất tuyệt vời nếu bạn không chạy trên máy tính thật, mà bạn chạy trong đầu, sẽ giúp
+bạn hiểu về Git rõ ràng hơn):
+a. Tạo 3 file: file1, file2, file3
+i. Vùng working: ko có gì
+ii. Vùng staging: k
+iii. Vùng repository: k
+b. Chạy lệnh: git init
+i. Vùng working: file1, file2, file3
+ii. Vùng staging: k
+iii. Vùng repository: k
+c. Chạy lệnh: git commit -m”init project” => chưa add file nào vào staging area nên không có gì xảy ra
+d. Chạy lệnh: git add file1 => add file1 into staging area
+e. Chạy lệnh: git commit -m”add file” => add file1 vào git repository
+f. Chạy lệnh: git add . => add file2 và file3 vào staging area
+g. Chạy lệnh: git restore --staged file2 => đưa file2 về lại working directory
+h. Chạy lệnh: git commit -m”add all files” => commit file3 lên git repository
+i. Chạy lệnh: git reset HEAD~1 => Remove file3 trên git repository
+3. Hãy tưởng tượng có 1 folder lesson-3-git mới được tạo ra. Hãy liệt kê các file theo
+từng vùng sau khi thao tác các lệnh sau:
+a. Chạy lệnh git init
+b. Tạo file file1.txt, file2.txt, oops/file3.txt.
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt
+ii. oops/
+d. Chạy lệnh: git add . => không thêm file1.txt và oops vào staging area
+e. Chạy lệnh: git commit -m"init project" => chỉ thêm file2.txt vào git repository
