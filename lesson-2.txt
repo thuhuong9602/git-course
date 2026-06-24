@@ -8,9 +8,9 @@ dưới đây:
 vùng sau khi thao tác một loạt các lệnh sau (sẽ rất tuyệt nếu bạn không chạy lệnh trên
 máy thật, mà bạn suy nghĩ trong đầu để ra được kết quả; bạn sẽ nhớ rất lâu đấy ^^):
 a. Tạo 3 file: file1, file2, file3
-b. Chạy lệnh: git init
-c. Chạy lệnh: git commit -m”init project”
-d. Chạy lệnh: git add file1
-e. Chạy lệnh: git commit -m”add file1”
-f. Chạy lệnh: git add file
-3. Push bài tập lên GitHub.
+b. Chạy lệnh: git init => đã chạy r nên báo tồn tại
+c. Chạy lệnh: git commit -m”init project” => chưa add nên ko có gì commit
+d. Chạy lệnh: git add file1 => adds file1 into the staging area
+e. Chạy lệnh: git commit -m”add file1” => creates commit and save the staged changes into the git repository
+f. Chạy lệnh: git add file => the command does not work because no file was provided
+3. Push bài tập lên GitHub
